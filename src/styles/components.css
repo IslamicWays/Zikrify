@@ -1,0 +1,195 @@
+/* components.css - Reusable component styles and utilities */
+/* LEARNING HINTS & PSEUDO CSS:
+
+COMPONENT STYLING CONCEPTS:
+- Reusable component classes
+- Utility classes for common patterns
+- Component variants and modifiers
+- Consistent spacing and layout
+- Interactive states (hover, focus, active)
+
+PSEUDO STYLING STRUCTURE:
+1. Card components
+2. Button variants
+3. Form components
+4. Layout utilities
+5. Text utilities
+6. Interactive states
+
+HINTS:
+- Use BEM methodology for naming
+- Create modifier classes for variants
+- Add consistent hover/focus states
+- Consider component composition
+- Use CSS Grid and Flexbox utilities
+*/
+
+/* TODO: Card Components */
+.card {
+  /* Base card styling with shadow, border-radius, padding */
+}
+
+.card--elevated {
+  /* Card variant with more prominent shadow */
+}
+
+.card--bordered {
+  /* Card variant with border instead of shadow */
+}
+
+/* TODO: Button Components */
+.btn {
+  /* Base button styling */
+}
+
+.btn--primary {
+  /* Primary button variant */
+}
+
+.btn--secondary {
+  /* Secondary button variant */
+}
+
+.btn--outline {
+  /* Outline button variant */
+}
+
+.btn--large {
+  /* Large button size modifier */
+}
+
+.btn--small {
+  /* Small button size modifier */
+}
+
+/* TODO: Form Components */
+.form-group {
+  /* Form group container */
+}
+
+.form-label {
+  /* Form label styling */
+}
+
+.form-input {
+  /* Input field styling */
+}
+
+.form-input--error {
+  /* Error state for inputs */
+}
+
+/* TODO: Layout Utilities */
+.flex {
+  /* Flexbox container */
+}
+
+.flex-center {
+  /* Centered flexbox */
+}
+
+.flex-between {
+  /* Space-between flexbox */
+}
+
+.grid {
+  /* Grid container */
+}
+
+.grid-2 {
+  /* 2-column grid */
+}
+
+.grid-3 {
+  /* 3-column grid */
+}
+
+/* TODO: Spacing Utilities */
+.p-1 { /* padding: var(--spacing-1); */ }
+.p-2 { /* padding: var(--spacing-2); */ }
+.p-4 { /* padding: var(--spacing-4); */ }
+
+.m-1 { /* margin: var(--spacing-1); */ }
+.m-2 { /* margin: var(--spacing-2); */ }
+.m-4 { /* margin: var(--spacing-4); */ }
+
+.mb-2 { /* margin-bottom: var(--spacing-2); */ }
+.mt-4 { /* margin-top: var(--spacing-4); */ }
+
+/* TODO: Text Utilities */
+.text-primary {
+  /* Primary text color */
+}
+
+.text-secondary {
+  /* Secondary text color */
+}
+
+.text-muted {
+  /* Muted text color */
+}
+
+.text-large {
+  /* Large text size */
+}
+
+.text-small {
+  /* Small text size */
+}
+
+.text-bold {
+  /* Bold text weight */
+}
+
+.text-center {
+  /* Centered text */
+}
+
+.text-right {
+  /* Right-aligned text */
+}
+
+/* TODO: Interactive States */
+.interactive {
+  /* Base interactive element */
+}
+
+.interactive:hover {
+  /* Hover state */
+}
+
+.interactive:focus {
+  /* Focus state */
+}
+
+.interactive:active {
+  /* Active state */
+}
+
+/* TODO: Animation Utilities */
+.fade-in {
+  /* Fade in animation */
+}
+
+.slide-up {
+  /* Slide up animation */
+}
+
+.bounce {
+  /* Bounce animation */
+}
+
+/* TODO: Responsive Utilities */
+.hide-mobile {
+  /* Hide on mobile devices */
+}
+
+.show-mobile {
+  /* Show only on mobile devices */
+}
+
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+}

@@ -1,0 +1,44 @@
+/* Header.css - Styling for Header component */
+/* LEARNING HINTS & PSEUDO CSS:
+
+STYLING CONCEPTS TO LEARN:
+- CSS Flexbox for layout
+- CSS Grid (alternative)
+- Responsive design with media queries
+- CSS variables for consistent theming
+- Box model (margin, padding, border)
+
+PSEUDO STYLING STRUCTURE:
+1. Header container styling
+2. Title/logo styling
+3. Time display styling
+4. Navigation elements styling
+5. Mobile responsive adjustments
+
+HINTS:
+- Use flexbox: display: flex, justify-content, align-items
+- Consider dark/light theme variables
+- Use rem/em units for scalability
+- Add hover effects for interactive elements
+- Consider Islamic design patterns/colors
+*/
+
+/* TODO: Style header container with flexbox */
+.header {
+  /* Add display, padding, background, etc. */
+}
+
+/* TODO: Style app title */
+.header-title {
+  /* Add font-size, color, font-weight */
+}
+
+/* TODO: Style time display */
+.header-time {
+  /* Add styling for time display */
+}
+
+/* TODO: Add responsive design */
+@media (max-width: 768px) {
+  /* Mobile styles */
+}

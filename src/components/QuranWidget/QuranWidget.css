@@ -1,0 +1,61 @@
+/* QuranWidget.css - Styling for Quran Widget component */
+/* LEARNING HINTS & PSEUDO CSS:
+
+STYLING CONCEPTS:
+- Arabic text styling (RTL direction)
+- Typography for readability
+- Card design with elegant borders
+- Button styling for controls
+- Responsive text sizing
+
+PSEUDO STYLING STRUCTURE:
+1. Widget container styling
+2. Arabic text styling (RTL)
+3. Translation text styling
+4. Navigation controls styling
+5. Surah information styling
+6. Bookmark button styling
+
+HINTS:
+- Use direction: rtl for Arabic text
+- Choose appropriate fonts for Arabic
+- Add sufficient line-height for readability
+- Use Islamic color palette
+- Consider dark mode support
+*/
+
+/* TODO: Style widget container */
+.quran-widget {
+  /* Add card styling, padding, background */
+}
+
+/* TODO: Style Arabic text */
+.arabic-text {
+  /* Add RTL direction, Arabic font, larger size */
+  direction: rtl;
+}
+
+/* TODO: Style translation text */
+.translation-text {
+  /* Add readable font, spacing */
+}
+
+/* TODO: Style navigation controls */
+.navigation-controls {
+  /* Add flexbox, spacing, button styling */
+}
+
+/* TODO: Style surah information */
+.surah-info {
+  /* Add styling for surah name and number */
+}
+
+/* TODO: Style bookmark button */
+.bookmark-btn {
+  /* Add button styling with Islamic theme */
+}
+
+/* TODO: Add responsive design */
+@media (max-width: 768px) {
+  /* Adjust text sizes for mobile */
+}

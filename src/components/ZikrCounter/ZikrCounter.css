@@ -1,0 +1,65 @@
+/* ZikrCounter.css - Styling for Zikr Counter component */
+/* LEARNING HINTS & PSEUDO CSS:
+
+STYLING CONCEPTS:
+- Large, touch-friendly buttons
+- Circular progress indicators
+- Number display styling
+- Animation effects
+- Mobile-first design
+
+PSEUDO STYLING STRUCTURE:
+1. Counter container styling
+2. Count display styling (large numbers)
+3. Dhikr text display
+4. Increment button styling
+5. Control buttons styling
+6. Progress indicator styling
+
+HINTS:
+- Make increment button large and centered
+- Use CSS animations for count changes
+- Add visual feedback on button press
+- Consider circular progress bar
+- Use vibrant, engaging colors
+*/
+
+/* TODO: Style counter container */
+.zikr-counter {
+  /* Add centered layout, padding */
+}
+
+/* TODO: Style count display */
+.count-display {
+  /* Large font size, prominent styling */
+}
+
+/* TODO: Style dhikr text */
+.dhikr-text {
+  /* Arabic/Islamic styling, readable font */
+}
+
+/* TODO: Style increment button */
+.increment-btn {
+  /* Large, circular, touch-friendly */
+}
+
+/* TODO: Style control buttons */
+.control-buttons {
+  /* Flexbox layout, spacing */
+}
+
+/* TODO: Style progress indicator */
+.progress-indicator {
+  /* Circular or linear progress bar */
+}
+
+/* TODO: Add animations */
+.count-animation {
+  /* Scale or fade animation for count changes */
+}
+
+/* TODO: Mobile optimizations */
+@media (max-width: 768px) {
+  /* Larger touch targets */
+}

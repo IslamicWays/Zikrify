@@ -1,0 +1,61 @@
+/* Notification.css - Styling for Notification component */
+/* LEARNING HINTS & PSEUDO CSS:
+
+STYLING CONCEPTS:
+- Fixed positioning for notifications
+- Animation keyframes
+- Different notification types
+- Z-index for layering
+- Responsive positioning
+
+PSEUDO STYLING STRUCTURE:
+1. Notification container positioning
+2. Different notification types (success, warning, error)
+3. Animation for show/hide
+4. Close button styling
+5. Mobile responsiveness
+
+HINTS:
+- Use position: fixed for notifications
+- Add CSS animations (@keyframes)
+- Use different colors for notification types
+- High z-index to appear above other content
+- Consider notification stacking
+*/
+
+/* TODO: Style notification container */
+.notification {
+  /* Add fixed positioning, padding, border-radius */
+}
+
+/* TODO: Different notification types */
+.notification.success {
+  /* Success notification styling */
+}
+
+.notification.warning {
+  /* Warning notification styling */
+}
+
+.notification.error {
+  /* Error notification styling */
+}
+
+/* TODO: Animation for show/hide */
+@keyframes slideIn {
+  /* Add slide-in animation */
+}
+
+@keyframes slideOut {
+  /* Add slide-out animation */
+}
+
+/* TODO: Style close button */
+.notification-close {
+  /* Add close button styling */
+}
+
+/* TODO: Mobile responsiveness */
+@media (max-width: 768px) {
+  /* Mobile notification adjustments */
+}

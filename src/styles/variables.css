@@ -1,0 +1,144 @@
+/* variables.css - CSS custom properties and design tokens */
+/* LEARNING HINTS & PSEUDO CSS:
+
+CSS VARIABLES CONCEPTS:
+- CSS custom properties (--variable-name)
+- Design system tokens
+- Color palettes and schemes
+- Typography scales
+- Spacing systems
+- Component-specific variables
+
+PSEUDO VARIABLES STRUCTURE:
+1. Color palette (primary, secondary, neutral)
+2. Typography (font families, sizes, weights)
+3. Spacing scale (margins, paddings)
+4. Layout dimensions
+5. Animation/transition values
+6. Component-specific variables
+
+HINTS:
+- Use semantic naming (--color-primary vs --green)
+- Create consistent spacing scale
+- Define typography scale (1.2 ratio common)
+- Consider Islamic design principles
+- Group related variables together
+*/
+
+/* TODO: Color Palette */
+:root {
+  /* Primary Colors (Islamic green theme) */
+  /* --color-primary-50: #E8F5E8; */
+  /* --color-primary-100: #C8E6C9; */
+  /* --color-primary-500: #4CAF50; */
+  /* --color-primary-700: #388E3C; */
+  /* --color-primary-900: #1B5E20; */
+
+  /* Secondary Colors (Gold/Amber) */
+  /* --color-secondary-100: #FFF8E1; */
+  /* --color-secondary-500: #FFC107; */
+  /* --color-secondary-700: #F57C00; */
+
+  /* Neutral Colors */
+  /* --color-neutral-50: #FAFAFA; */
+  /* --color-neutral-100: #F5F5F5; */
+  /* --color-neutral-500: #9E9E9E; */
+  /* --color-neutral-700: #616161; */
+  /* --color-neutral-900: #212121; */
+
+  /* Semantic Colors */
+  /* --color-success: #4CAF50; */
+  /* --color-warning: #FF9800; */
+  /* --color-error: #F44336; */
+  /* --color-info: #2196F3; */
+}
+
+/* TODO: Typography Variables */
+:root {
+  /* Font Families */
+  /* --font-family-primary: 'Segoe UI', system-ui, sans-serif; */
+  /* --font-family-arabic: 'Amiri', 'Traditional Arabic', serif; */
+  /* --font-family-mono: 'Fira Code', monospace; */
+
+  /* Font Sizes (Type Scale) */
+  /* --font-size-xs: 0.75rem; */
+  /* --font-size-sm: 0.875rem; */
+  /* --font-size-base: 1rem; */
+  /* --font-size-lg: 1.125rem; */
+  /* --font-size-xl: 1.25rem; */
+  /* --font-size-2xl: 1.5rem; */
+  /* --font-size-3xl: 1.875rem; */
+
+  /* Font Weights */
+  /* --font-weight-light: 300; */
+  /* --font-weight-normal: 400; */
+  /* --font-weight-medium: 500; */
+  /* --font-weight-semibold: 600; */
+  /* --font-weight-bold: 700; */
+
+  /* Line Heights */
+  /* --line-height-tight: 1.25; */
+  /* --line-height-normal: 1.5; */
+  /* --line-height-relaxed: 1.75; */
+}
+
+/* TODO: Spacing Variables */
+:root {
+  /* Spacing Scale (based on 0.25rem = 4px) */
+  /* --spacing-1: 0.25rem; */
+  /* --spacing-2: 0.5rem; */
+  /* --spacing-3: 0.75rem; */
+  /* --spacing-4: 1rem; */
+  /* --spacing-6: 1.5rem; */
+  /* --spacing-8: 2rem; */
+  /* --spacing-12: 3rem; */
+  /* --spacing-16: 4rem; */
+}
+
+/* TODO: Layout Variables */
+:root {
+  /* Container Sizes */
+  /* --container-sm: 640px; */
+  /* --container-md: 768px; */
+  /* --container-lg: 1024px; */
+  /* --container-xl: 1280px; */
+
+  /* Component Dimensions */
+  /* --header-height: 4rem; */
+  /* --footer-height: 3rem; */
+  /* --sidebar-width: 16rem; */
+
+  /* Border Radius */
+  /* --radius-sm: 0.25rem; */
+  /* --radius-md: 0.5rem; */
+  /* --radius-lg: 1rem; */
+  /* --radius-full: 9999px; */
+}
+
+/* TODO: Animation Variables */
+:root {
+  /* Transition Durations */
+  /* --duration-fast: 150ms; */
+  /* --duration-normal: 300ms; */
+  /* --duration-slow: 500ms; */
+
+  /* Easing Functions */
+  /* --ease-in: cubic-bezier(0.4, 0, 1, 1); */
+  /* --ease-out: cubic-bezier(0, 0, 0.2, 1); */
+  /* --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+/* TODO: Component-Specific Variables */
+:root {
+  /* Prayer Times Component */
+  /* --prayer-card-bg: var(--color-neutral-50); */
+  /* --prayer-active-bg: var(--color-primary-100); */
+
+  /* Zikr Counter Component */
+  /* --counter-button-size: 5rem; */
+  /* --counter-text-size: var(--font-size-3xl); */
+
+  /* Quran Widget Component */
+  /* --arabic-text-size: var(--font-size-2xl); */
+  /* --translation-text-size: var(--font-size-lg); */
+}

@@ -1,0 +1,55 @@
+/* PrayerTimes.css - Styling for Prayer Times component */
+/* LEARNING HINTS & PSEUDO CSS:
+
+STYLING CONCEPTS:
+- Card-based design
+- List styling
+- Highlight states
+- Animation for countdown
+- Islamic color schemes
+
+PSEUDO STYLING STRUCTURE:
+1. Container card styling
+2. Prayer times list styling
+3. Individual prayer item styling
+4. Next prayer highlighting
+5. Countdown timer styling
+6. Responsive design
+
+HINTS:
+- Use CSS Grid or Flexbox for layout
+- Add subtle shadows for card effect
+- Use different colors for active/next prayer
+- Consider smooth transitions
+- Add loading skeleton styles
+*/
+
+/* TODO: Style prayer times container */
+.prayer-times {
+  /* Add card styling, padding, border-radius */
+}
+
+/* TODO: Style prayer times list */
+.prayer-list {
+  /* Remove default list styling, add spacing */
+}
+
+/* TODO: Style individual prayer items */
+.prayer-item {
+  /* Add flexbox, padding, border */
+}
+
+/* TODO: Highlight next prayer */
+.prayer-item.next {
+  /* Add highlighting styles */
+}
+
+/* TODO: Style countdown timer */
+.countdown {
+  /* Add prominent styling for countdown */
+}
+
+/* TODO: Add responsive design */
+@media (max-width: 768px) {
+  /* Mobile adjustments */
+}

@@ -1,0 +1,47 @@
+/* Footer.css - Styling for Footer component */
+/* LEARNING HINTS & PSEUDO CSS:
+
+STYLING CONCEPTS:
+- Footer positioning
+- Link styling
+- Text alignment
+- Background colors
+- Responsive design
+
+PSEUDO STYLING STRUCTURE:
+1. Footer container styling
+2. Link styling and hover effects
+3. Text styling
+4. Layout adjustments
+5. Mobile responsiveness
+
+HINTS:
+- Position footer at bottom
+- Use subtle background colors
+- Style links with hover effects
+- Center or left-align content
+- Keep text readable but not prominent
+*/
+
+/* TODO: Style footer container */
+.footer {
+  /* Add background, padding, text-align */
+  display: block; /* Placeholder to avoid empty rule */
+}
+
+/* TODO: Style footer links */
+.footer-link {
+  /* Add link styling, hover effects */
+  color: inherit; /* Placeholder to avoid empty rule */
+}
+
+/* TODO: Style footer text */
+.footer-text {
+  /* Add text styling, color, font-size */
+  margin: 0; /* Placeholder to avoid empty rule */
+}
+
+/* TODO: Add responsive design */
+@media (max-width: 768px) {
+  /* Mobile footer adjustments */
+}

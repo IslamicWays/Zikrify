@@ -1,0 +1,92 @@
+/* globals.css - Global styles and resets */
+/* LEARNING HINTS & PSEUDO CSS:
+
+GLOBAL STYLING CONCEPTS:
+- CSS Reset/Normalize
+- Global typography
+- Base element styling
+- Accessibility improvements
+- Cross-browser compatibility
+
+PSEUDO STYLING STRUCTURE:
+1. CSS Reset/Normalize
+2. Root variables (CSS custom properties)
+3. Base typography (html, body, headings)
+4. Global utility classes
+5. Accessibility improvements
+6. Print styles (optional)
+
+HINTS:
+- Use CSS custom properties for theming
+- Set box-sizing: border-box globally
+- Define consistent font stacks
+- Add focus styles for accessibility
+- Consider dark mode support
+*/
+
+/* TODO: CSS Reset */
+* {
+  /* Add box-sizing, margin, padding reset */
+}
+
+/* TODO: Root variables for theming */
+:root {
+  /* Define CSS custom properties for colors, fonts, sizes */
+  /* --primary-color: #2E7D32; */
+  /* --secondary-color: #FFC107; */
+  /* --background-color: #F5F5F5; */
+  /* --text-color: #333; */
+  /* --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+/* TODO: Base HTML and body styling */
+html {
+  /* Set font-size, scroll behavior */
+}
+
+body {
+  /* Set font-family, line-height, color, background */
+}
+
+/* TODO: Typography - headings */
+h1, h2, h3, h4, h5, h6 {
+  /* Set consistent heading styles */
+}
+
+/* TODO: Links styling */
+a {
+  /* Set link colors, text-decoration */
+}
+
+/* TODO: Button reset and base styling */
+button {
+  /* Reset button styles, add base styling */
+}
+
+/* TODO: Form elements */
+input, textarea, select {
+  /* Base form element styling */
+}
+
+/* TODO: Utility classes */
+.sr-only {
+  /* Screen reader only class for accessibility */
+}
+
+.container {
+  /* Container class for consistent width/padding */
+}
+
+.text-center {
+  /* Text alignment utility */
+}
+
+/* TODO: Focus styles for accessibility */
+*:focus {
+  /* Add visible focus indicators */
+}
+
+/* TODO: Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+  /* Dark mode variable overrides */
+}
