@@ -40,6 +40,7 @@ HINTS:
 import React from 'react';
 import Header from './components/Header/Header';
 import PrayerTimes from './components/PrayerTimes/PrayerTimes';
+import Azkar from './components/Azkar/Azkar';
 // TODO: Import all components (Header, PrayerTimes, etc.)
 // TODO: Import global styles
 // TODO: Import custom hooks (useNotification)
