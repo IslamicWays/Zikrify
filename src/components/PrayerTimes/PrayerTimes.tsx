@@ -116,7 +116,7 @@ const PrayerTimes: React.FC = () => {
   }, [nextPrayer]);
 
   return (
-    <div className="bg-black text-white flex items-center justify-center min-h-screen p-4">
+    <div className="text-white flex items-center justify-center">
       <div className="bg-gradient-to-br from-green to-darkGray border border-gold rounded-xl p-6 w-full max-w-md" dir="rtl">
         <h2 className="text-gold text-lg font-bold text-center mb-4">⏰ أوقات الصلاة</h2>
 
