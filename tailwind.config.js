@@ -11,6 +11,7 @@ export default {
         lightGray: "#B0B0B0",    // gray secondary text
         green: "#22C55E",      // green highlight
         purple: "#d616d683",  // the purple background color
+        darkPurple: "#4d313d", // even darker purple
       },
     },
   },

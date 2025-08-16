@@ -1,5 +1,4 @@
 // App.js - Main application component
-// PSEUDO CODE & LEARNING HINTS:
 
 /*
 MAIN APP COMPONENT PURPOSE:
@@ -36,53 +35,54 @@ HINTS:
 - Import and use all created components
 */
 
-// TODO: Import React and hooks
-import React from 'react';
-import Header from './components/Header/Header';
-import PrayerTimes from './components/PrayerTimes/PrayerTimes';
-import Azkar from './components/Azkar/Azkar';
-// TODO: Import all components (Header, PrayerTimes, etc.)
-// TODO: Import global styles
-// TODO: Import custom hooks (useNotification)
+// ✅ 1. Import React and hooks
+import React from "react";
 
-// TODO: Create App functional component
-// TODO: Set up global state for notifications, theme
-// TODO: Return JSX with complete app layout:
-//   - Header
-//   - Main content with all components
-//   - Footer
-//   - Notifications
+// ✅ 2. Import components
+import Header from "./components/Header/Header";
+import PrayerTimes from "./components/PrayerTimes/PrayerTimes";
+import Azkar from "./components/Azkar/Azkar";
 
-// TODO: Export App component
+// TODO: Import more components when created
+// import QuranWidget from "./components/QuranWidget/QuranWidget";
+// import ZikrCounter from "./components/ZikrCounter/ZikrCounter";
+// import QuickActions from "./components/QuickActions/QuickActions";
+// import Footer from "./components/Footer/Footer";
+// import Notifications from "./components/Notifications/Notifications";
 
+// ✅ 3. Create App functional component
 const App = () => {
   // TODO: Add global state management
-  // TODO: Add notification handling
-  // TODO: Return complete app JSX structure
-  
-  // TODO: Replace this placeholder with actual JSX structure:
-  return (
-      <>
-          <Header />
-          <PrayerTimes />
-      </>
+  // Example: const [theme, setTheme] = useState("light");
+  // Example: const { notifications } = useNotification();
 
-      //   <div className="app">
-      //     {/* TODO: Add Header component */}
-      //
-      //     <main className="main-content">
-      //       {/* TODO: Add PrayerTimes component */}
-      //       {/* TODO: Add QuranWidget component */}
-      //       {/* TODO: Add ZikrCounter component */}
-      //       {/* TODO: Add QuickActions component */}
-      //     </main>
-      //
-      //     {/* TODO: Add Footer component */}
-      //     {/* TODO: Add Notification component */}
-      //   </div>
+  // ✅ 4. Return JSX with structured layout
+  return (
+    <div className="app min-h-screen flex flex-col bg-gray-50 text-gray-900">
+      {/* Header */}
+      <Header />
+
+      {/* Main Content */}
+      <main className="flex-1 m-2">
+        <div className="flex flex-wrap gap-4 w-full">
+          <div className="flex-1 min-w-[300px]">
+            <PrayerTimes />
+          </div>
+          <div className="flex-1 min-w-[300px]">
+            <Azkar />
+          </div>
+        </div>
+      </main>
+
+
+      {/* Footer (TODO: add later) */}
+      {/* <Footer /> */}
+
+      {/* Notifications (TODO: add later) */}
+      {/* <Notifications /> */}
+    </div>
   );
-  
-  return React.createElement('div', { className: 'app' }, 'Zikrify App - Replace with JSX structure');
 };
 
+// ✅ 5. Export App component
 export default App;
