@@ -45,7 +45,7 @@ HINTS:
 
 const PrayerTimes = () => {
     return (
-
+        <div></div>
     );
 };
 
