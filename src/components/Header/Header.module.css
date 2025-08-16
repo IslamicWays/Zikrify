@@ -25,20 +25,36 @@ HINTS:
 
 /* TODO: Style header container with flexbox */
 .header {
-  /* Add display, padding, background, etc. */
+    display: flex;
+    justify-content: space-between; /* Center items vertically */
+    flex-direction: row-reverse;
+    background-color: black;
+    border-bottom: 2px solid goldenrod;
+    /* Add display, padding, background, etc. */
 }
-
-/* TODO: Style app title */
+/* Your header styles */
 .header-title {
-  /* Add font-size, color, font-weight */
+    color: goldenrod;
+    padding-right: 20px;
+    /* top/bottom = 10px, left/right = 20px */
+    text-align: right;
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+    /* responsive size */
+    font-weight: bold;
 }
-
 /* TODO: Style time display */
 .header-time {
-  /* Add styling for time display */
+    /* Add styling for time display */
+}
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    gap: 10px;
+    align-items: center;
 }
 
 /* TODO: Add responsive design */
 @media (max-width: 768px) {
-  /* Mobile styles */
+    /* Mobile styles */
 }

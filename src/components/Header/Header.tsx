@@ -40,5 +40,18 @@ HINTS:
 // TODO: Add useEffect for time updates
 // TODO: Return JSX structure
 // TODO: Export component
+import styles from "./Header.module.css";
+
+const Header = () => {
+    return (
+        <div className={styles.header}>
+            <h1 className={styles["header-title"]}>الذكر🕌</h1>
+            <div className={styles["header-nav"]}>
+                <p>الصلاه</p> <p> | القرآن | </p> <p>الذكر</p>
+            </div>
+        </div>
+    );
+};
+
 
 export default Header;

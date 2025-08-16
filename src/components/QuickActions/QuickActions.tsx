@@ -43,4 +43,4 @@ HINTS:
 // TODO: Return JSX with action buttons
 // TODO: Export component
 
-export default QuickActions;
+//export default QuickActions;

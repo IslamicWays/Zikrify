@@ -43,4 +43,10 @@ HINTS:
 // TODO: Return JSX with prayer times display
 // TODO: Export component
 
+const PrayerTimes = () => {
+    return (
+
+    );
+};
+
 export default PrayerTimes;

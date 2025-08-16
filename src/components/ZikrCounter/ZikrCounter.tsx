@@ -52,4 +52,4 @@ HINTS:
 // TODO: Return JSX with counter interface
 // TODO: Export component
 
-export default ZikrCounter;
+//export default ZikrCounter;

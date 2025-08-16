@@ -37,4 +37,4 @@ HINTS:
 // TODO: Return JSX with footer content
 // TODO: Export component
 
-export default Footer;
+//export default Footer;

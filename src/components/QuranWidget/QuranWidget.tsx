@@ -48,4 +48,4 @@ HINTS:
 // TODO: Return JSX with verse display and controls
 // TODO: Export component
 
-export default QuranWidget;
+//export default QuranWidget;
