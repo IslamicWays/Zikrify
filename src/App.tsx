@@ -10,11 +10,11 @@ const App = () => {
 
             {/* Main Content */}
             <main className="flex-1 w-full px-4 py-4">
-                <div className="flex flex-col md:flex-row w-full h-full gap-6 min-h-[600px]">
-                    <div className="w-full md:w-1/2 h-full">
+                <div className="flex flex-col md:flex-row w-full gap-6 items-stretch">
+                    <div className="w-full md:w-1/2 flex">
                         <PrayerTimes />
                     </div>
-                    <div className="w-full md:w-1/2 h-full">
+                    <div className="w-full md:w-1/2 flex">
                         <Azkar />
                     </div>
                 </div>

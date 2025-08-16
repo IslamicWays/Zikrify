@@ -134,9 +134,9 @@ const PrayerTimes: React.FC = () => {
     return (
         <CustomCard
             header="⏰ أوقات الصلاة"
-            className="h-full w-full flex flex-col"
+            className="h-full w-full flex flex-col min-h-full"
             headerClassName="text-lg font-bold text-center mb-4"
-            bodyClassName="flex-1 flex flex-col"
+            bodyClassName="flex-1 flex flex-col justify-between"
             dir="rtl"
         >
             <div className="mb-4">
@@ -160,7 +160,7 @@ const PrayerTimes: React.FC = () => {
                 </select>
             </div>
 
-            <ul className="grid grid-cols-2 gap-3 text-center flex-1">
+            <ul className="grid grid-cols-2 gap-3 text-center mb-4">
                 {prayerTimes.map((prayer) => (
                     <li
                         key={prayer.name}
@@ -177,7 +177,7 @@ const PrayerTimes: React.FC = () => {
             </ul>
 
             {nextPrayer && (
-                <div className="mt-4 text-center text-green font-bold text-sm">
+                <div className="text-center text-green font-bold text-sm">
                     ⏳ الوقت المتبقي لصلاة {nextPrayer.name}: {countdown}
                 </div>
             )}
