@@ -98,49 +98,58 @@ const PrayerTimes: React.FC = () => {
 
   return (
     <div className="bg-black text-white flex items-center justify-center p-4">
-      <div className="w-full max-w-md bg-darkGray rounded-xl shadow-xl p-6">
-        <h2 className="text-2xl text-gold font-bold text-center mb-4">🕌 أوقات الصلاة</h2>
-
-        <div className="mb-4">
-          <label htmlFor="city" className="block mb-1 text-lightGray">اختر المدينة:</label>
-          <select
-            id="city"
-            className="w-full p-2 rounded bg-black text-white border border-lightGray"
-            value={selectedCity.name}
-            onChange={(e) => {
-              const city = cities.find((c) => c.name === e.target.value);
-              if (city) setSelectedCity(city);
-            }}
-          >
-            {cities.map((city) => (
-              <option key={city.name} value={city.name}>
-                {city.name}
-              </option>
-            ))}
-          </select>
+      <div
+  className="bg-gradient-to-br from-green to-darkGray border border-gold rounded-xl p-4"
+  dir="rtl"
+>
+        <h2 className="text-gold text-lg font-bold text-center mb-4">⏰ أوقات الصلاة</h2>
+        <div>
+            <label
+  htmlFor="city"
+  className="block mb-1 text-lightGray text-right w-full"
+  dir="rtl"
+>
+        اختر المدينة:
+        <select
+          value={selectedCity.name}
+          onChange={(e) => {
+            const city = cities.find((c) => c.name === e.target.value);
+            if (city) setSelectedCity(city);
+          }}
+          style={{ margin: '10px' }}
+        >
+          {cities.map((city) => (
+            <option key={city.name} value={city.name}>
+              {city.name}
+            </option>
+          ))}
+        </select>
+      </label>
         </div>
 
-        <ul className="space-y-2">
-          {prayerTimes.map((prayer) => (
-            <li
-              key={prayer.name}
-              className={`p-3 rounded-lg transition-all duration-300
-                ${
-                  nextPrayer?.name === prayer.name
-                    ? 'bg-gold text-black font-bold border-r-4 border-green'
-                    : 'bg-black border border-lightGray text-lightGray'
-                }`}
-            >
-              {prayer.name}: {prayer.time}
-            </li>
-          ))}
-        </ul>
+  <ul className="grid grid-cols-2 gap-3 text-center">
+    {prayerTimes.map((prayer) => (
+      <li
+        key={prayer.name}
+        className={`rounded-md px-3 py-2 text-sm font-semibold shadow 
+          flex justify-between items-center
+          ${
+            nextPrayer?.name === prayer.name
+              ? 'bg-gold text-black'
+              : 'bg-black/30 text-white border border-lightGray'
+          }`}
+      >
+        <span>{prayer.time}</span>
+        <span>{prayer.name}</span>
+      </li>
+    ))}
+  </ul>
 
-        {nextPrayer && (
-          <div className="mt-6 text-center text-green text-lg font-semibold">
-            ⏳ الوقت المتبقي لصلاة {nextPrayer.name}: {countdown}
-          </div>
-        )}
+  {nextPrayer && (
+    <div className="mt-4 text-center text-green font-bold text-sm">
+      ⏳ الوقت المتبقي لصلاة {nextPrayer.name}: {countdown}
+    </div>
+  )}
       </div>
     </div>
   );
