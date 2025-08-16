@@ -2,28 +2,28 @@ import clsx from "clsx";
 import React from "react";
 
 type Props = {
-    title?: string;
-    children?: React.ReactNode;
+    header?: string;
     className?: string;
-    titleClassName?: string;
-    contentClassName?: string;
+    headerClassName?: string;
+    bodyClassName?: string;
+    children?: React.ReactNode;
 } & React.HTMLAttributes<HTMLDivElement>;
 
-const CustomCard = ({title, children, className, titleClassName, contentClassName, ...props}: Props) => {
+const CustomCard = ({header, children, className, headerClassName, bodyClassName, ...props}: Props) => {
     return (
         <div
             className={clsx(
-                // Minimal default styles - just the basics
-                "rounded-xl p-4 bg-white shadow-md border border-gray-200",
+                // Quran widget default styles
+                "rounded-xl p-6 border border-[#d4af37] bg-gradient-to-br from-[#2f1a2f] to-[#4a2c4a]",
 
-                // User can override everything
+                // User overrides
                 className
             )}
             {...props}
         >
-            {title && <h2 className={clsx("text-xl font-semibold mb-3", titleClassName)}>{title}</h2>}
+            {header && <h2 className={clsx("text-xl font-semibold mb-3 text-[#d4af37]", headerClassName)}>{header}</h2>}
 
-            {children && <div className={contentClassName}>{children}</div>}
+            {children && <div className={bodyClassName}>{children}</div>}
         </div>
     );
 };
