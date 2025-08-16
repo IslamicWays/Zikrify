@@ -50,11 +50,12 @@ const PrayerTimes: React.FC = () => {
     const times = pt.getTimes(new Date(), [lat, lon], tzOffset, 'auto', '24h');
 
     const prayers: PrayerTime[] = Object.entries(times)
-      .filter(([key]) => PRAYER_NAMES[key])
-      .map(([key, time]) => ({
-        name: PRAYER_NAMES[key],
-        time,
-      }));
+  .filter(([key]) => PRAYER_NAMES[key])
+  .map(([key, time]) => ({
+    name: PRAYER_NAMES[key],
+    time: time as string,
+  }));
+
 
     setPrayerTimes(prayers);
     calculateNextPrayer(times);
