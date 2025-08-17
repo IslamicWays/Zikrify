@@ -27,9 +27,10 @@ HINTS:
 .header {
     display: flex;
     justify-content: space-between; /* Center items vertically */
-    flex-direction: row-reverse;
+    flex-direction: row;
     background-color: black;
     border-bottom: 2px solid goldenrod;
+    padding: 16px;
     /* Add display, padding, background, etc. */
 }
 /* Your header styles */

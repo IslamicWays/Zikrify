@@ -23,6 +23,10 @@ HINTS:
 - Use Islamic color palette
 - Consider dark mode support
 */
+input::placeholder {
+    text-align: center;
+}
+
 
 /* TODO: Style widget container */
 .quran-widget {

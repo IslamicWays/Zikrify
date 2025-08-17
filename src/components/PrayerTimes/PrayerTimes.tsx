@@ -142,56 +142,59 @@ const PrayerTimes: React.FC = () => {
     }, [nextPrayer]);
 
     return (
-        <CustomCard
-            header="⏰ أوقات الصلاة"
-            className="h-full w-full flex flex-col"
-            headerClassName="text-lg font-bold text-center mb-4"
-            bodyClassName="flex-1 flex flex-col"
-            dir="rtl"
-        >
-            <div className="mb-4">
-                <label htmlFor="city" className="block text-lightGray text-sm mb-2 text-right">
-                    اختر المدينة:
-                </label>
-                <select
-                    id="city"
-                    value={selectedCity.name}
-                    onChange={(e) => {
-                        const city = cities.find((c) => c.name === e.target.value);
-                        if (city) setSelectedCity(city);
-                    }}
-                    className="w-full bg-black border border-lightGray text-white p-2 rounded"
-                >
-                    {cities.map((city) => (
-                        <option key={city.name} value={city.name}>
-                            {city.name}
-                        </option>
-                    ))}
-                </select>
-            </div>
+      <CustomCard
+        header="⏰ أوقات الصلاة"
+        className="h-full w-full flex flex-col"
+        headerClassName="text-lg font-bold text-center mb-4"
+        bodyClassName="flex-1 flex flex-col"
+        dir="rtl"
+      >
+        <div className="mb-4">
+          <label
+            htmlFor="city"
+            className="block text-lightGray text-sm mb-2 text-right"
+          >
+            اختر المدينة:
+          </label>
+          <select
+            id="city"
+            value={selectedCity.name}
+            onChange={(e) => {
+              const city = cities.find((c) => c.name === e.target.value);
+              if (city) setSelectedCity(city);
+            }}
+            className="w-full bg-black border border-lightGray text-white p-2 rounded"
+          >
+            {cities.map((city) => (
+              <option key={city.name} value={city.name}>
+                {city.name}
+              </option>
+            ))}
+          </select>
+        </div>
 
-            <ul className="grid grid-cols-2 gap-3 text-center flex-1">
-                {prayerTimes.map((prayer) => (
-                    <li
-                        key={prayer.name}
-                        className={`rounded-md px-3 py-2 text-sm font-semibold shadow-sm flex justify-between items-center ${
-                            nextPrayer?.name === prayer.name
-                                ? "bg-gold text-black"
-                                : "bg-black/30 text-white border border-lightGray"
-                        }`}
-                    >
-                        <span>{prayer.time}</span>
-                        <span>{prayer.name}</span>
-                    </li>
-                ))}
-            </ul>
+        <ul className="grid grid-cols-2 gap-3 text-center flex-1">
+          {prayerTimes.map((prayer) => (
+            <li
+              key={prayer.name}
+              className={`rounded-md px-3 py-2 text-sm font-semibold shadow-sm flex justify-between items-center ${
+                nextPrayer?.name === prayer.name
+                  ? "bg-gold text-black"
+                  : "bg-black/30 text-white border border-lightGray"
+              }`}
+            >
+              <span>{prayer.time}</span>
+              <span>{prayer.name}</span>
+            </li>
+          ))}
+        </ul>
 
-            {nextPrayer && (
-                <div className="mt-4 text-center text-white font-bold text-sm">
-                    ⏳ الوقت المتبقي لصلاة {nextPrayer.name}: {countdown}
-                </div>
-            )}
-        </CustomCard>
+        {nextPrayer && (
+          <div className="px-4 py-4 mt-4 text-center text-white font-bold text-sm bg-black/20 rounded-md border border-lightGray/30">
+            ⏳ الوقت المتبقي لصلاة {nextPrayer.name}: {countdown}
+          </div>
+        )}
+      </CustomCard>
     );
 };
 
