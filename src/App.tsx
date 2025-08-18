@@ -11,7 +11,7 @@ const App = () => {
 
       {/* Main Content */}
       <main className="flex-1 w-full px-4 py-4">
-        <div className="flex flex-col md:flex-row w-full gap-6 items-stretch">
+        <div className="flex flex-col sm:flex-row w-full gap-6 items-stretch">
           <div className="w-full md:w-1/2 flex">
             <Azkar />
           </div>
@@ -19,7 +19,9 @@ const App = () => {
             <PrayerTimes />
           </div>
         </div>
-        <QuranWidget></QuranWidget>
+        <div className="p-4">
+          <QuranWidget />
+        </div>
       </main>
 
       {/* Footer */}

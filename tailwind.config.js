@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        bp: "850px", // new breakpoint
+      },
       colors: {
         // Main backgrounds
         dark: "#0a0f0a", // Main dark background

@@ -5,17 +5,19 @@ const QuranWidget = () => {
     <CustomCard header="القرآن الكريم" className="w-full flex flex-col">
       <form
         id="quranForm"
-        className="flex-1 flex flex-row gap-6 items-center justify-center"
+        className="flex-1 flex flex-col bp:flex-row gap-6 items-center justify-center"
       >
         {/* Dropdown */}
-        <label htmlFor="dropdown">Select Surah:</label>
+        <label htmlFor="dropdown">اختر السورة :</label>
         <select
           id="dropdown"
           name="dropdown"
           className="rounded-md border"
           required
         >
-          <option value="">-- Please choose --</option>
+          <option className="text-center" value="">
+            -- السورة --
+          </option>
           <option value="option1">Options to be implemented</option>
         </select>
         {/* Username input */}
@@ -25,8 +27,9 @@ const QuranWidget = () => {
           id="username"
           name="username"
           placeholder="اختر الآية"
-          className="rounded-md border px-2 py-1 ${styles.input}"
+          className={`rounded-md border px-2 py-1 ${styles.input}`}
         />
+
         {/* Button */}
         <button
           type="submit"
