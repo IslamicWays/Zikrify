@@ -40,18 +40,19 @@ HINTS:
 // TODO: Add useEffect for time updates
 // TODO: Return JSX structure
 // TODO: Export component
+import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
 
 const Header = () => {
-    return (
-        <div className={styles.header}>
-            <h1 className={styles["header-title"]}>الذكر🕌</h1>
-            <div className={styles["header-nav"]}>
-                <p>الصلاه</p> <p> | القرآن | </p> <p>الذكر</p>
-            </div>
-        </div>
-    );
+  return (
+    <div className={styles.header}>
+      <h1 className={styles["header-title"]}>🕌الذكر</h1>
+      <div className={styles["header-nav"]}>
+        <Link to="/">الرئيسية</Link>
+        <Link to="/quran">القرآن</Link>
+      </div>
+    </div>
+  );
 };
-
 
 export default Header;

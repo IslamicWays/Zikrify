@@ -2,7 +2,11 @@ import CustomCard from "../../utils/Card/CustomCard";
 import styles from "./QuranWidget.module.css";
 const QuranWidget = () => {
   return (
-    <CustomCard header="القرآن الكريم" className="w-full flex flex-col">
+    <CustomCard
+      backgroundColor="bg-quran"
+      header="القرآن الكريم"
+      className="w-full flex flex-col"
+    >
       <form
         id="quranForm"
         className="flex-1 flex flex-col bp:flex-row gap-6 items-center justify-center"

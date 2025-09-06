@@ -38,6 +38,96 @@ HINTS:
 // TODO: Define Islamic calendar constants
 // TODO: Define error message constants
 // TODO: Export all constants
+// Breakpoints
+export const SCREENS = {
+  bp: "850px", // new breakpoint
+};
+
+// Colors
+export const COLORS = {
+  // Main backgrounds
+  dark: "#0a0f0a",
+  darker: "#000000",
+
+  // Widget/Card backgrounds
+  green: "#1a2f1a", // Prayer times card
+  purple: "#2f1a2f", // Quran widget card
+  emerald: "#1a3d1a", // Zikr counter card
+  teal: "#0d4f3c", // Prayer gradient end
+  plum: "#4a2c4a", // Quran gradient end
+  forest: "#2d5f2d", // Zikr gradient end
+
+  // Gold theme
+  gold: "#d4af37",
+  goldDark: "#b8941f",
+  goldLight: "rgba(212, 175, 55, 0.1)",
+  goldLighter: "rgba(212, 175, 55, 0.05)",
+  goldBorder: "rgba(212, 175, 55, 0.3)",
+  goldShadow: "rgba(212, 175, 55, 0.3)",
+
+  // Text colors
+  white: "#ffffff",
+  gray: "#cccccc",
+  grayDark: "#666666",
+
+  // Special overlays
+  headerBg: "rgba(10, 15, 10, 0.95)",
+  cardHover: "rgba(212, 175, 55, 0.2)",
+};
+
+// Fonts
+export const FONTS = {
+  arabic: [
+    "-apple-system",
+    "BlinkMacSystemFont",
+    "Segoe UI",
+    "Roboto",
+    "sans-serif",
+  ],
+};
+
+// Gradients
+export const GRADIENTS = {
+  prayer: "linear-gradient(135deg, #1a2f1a, #0d4f3c)",
+  quran: "linear-gradient(135deg, #2f1a2f, #4a2c4a)",
+  zikr: "linear-gradient(135deg, #1a3d1a, #2d5f2d)",
+  action:
+    "linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.05))",
+};
+
+// Shadows
+export const SHADOWS = {
+  glow: "0 5px 15px rgba(212, 175, 55, 0.3)",
+  soft: "0 4px 6px rgba(0, 0, 0, 0.3)",
+};
+
+// Border Radius
+export const RADII = {
+  card: "15px",
+  pill: "20px",
+  small: "10px",
+  tiny: "8px",
+};
+
+// Spacing
+export const SPACING = {
+  nav: "80px",
+};
+
+// Z-index
+export const ZINDEX = {
+  nav: 100,
+  popup: 200,
+};
+
+// Background class names for autocomplete / tooltips
+export const BACKGROUNDCOLORS = [
+  "bg-quran",
+  "bg-prayer",
+  "bg-zikr",
+  "bg-action",
+] as const;
+export type BackgroundColor = typeof BACKGROUNDCOLORS[number];
 
 // API Configuration
 const API_ENDPOINTS = {
@@ -98,5 +188,5 @@ export {
   PRAYER_CONFIG,
   ISLAMIC_CALENDAR,
   ERROR_MESSAGES,
-  APP_CONFIG
+  APP_CONFIG,
 };

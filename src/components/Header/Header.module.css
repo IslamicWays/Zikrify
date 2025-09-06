@@ -1,61 +1,62 @@
 /* Header.css - Styling for Header component */
-/* LEARNING HINTS & PSEUDO CSS:
 
-STYLING CONCEPTS TO LEARN:
-- CSS Flexbox for layout
-- CSS Grid (alternative)
-- Responsive design with media queries
-- CSS variables for consistent theming
-- Box model (margin, padding, border)
-
-PSEUDO STYLING STRUCTURE:
-1. Header container styling
-2. Title/logo styling
-3. Time display styling
-4. Navigation elements styling
-5. Mobile responsive adjustments
-
-HINTS:
-- Use flexbox: display: flex, justify-content, align-items
-- Consider dark/light theme variables
-- Use rem/em units for scalability
-- Add hover effects for interactive elements
-- Consider Islamic design patterns/colors
-*/
-
-/* TODO: Style header container with flexbox */
+/* Header container */
 .header {
-    display: flex;
-    justify-content: space-between; /* Center items vertically */
-    flex-direction: row;
-    background-color: black;
-    border-bottom: 2px solid goldenrod;
-    padding: 16px;
-    /* Add display, padding, background, etc. */
-}
-/* Your header styles */
-.header-title {
-    color: goldenrod;
-    padding-right: 20px;
-    /* top/bottom = 10px, left/right = 20px */
-    text-align: right;
-    font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
-    /* responsive size */
-    font-weight: bold;
-}
-/* TODO: Style time display */
-.header-time {
-    /* Add styling for time display */
-}
-.header-nav {
-    display: flex;
-    flex-direction: row;
-    padding-left: 20px;
-    gap: 10px;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* vertically center */
+  background-color: black;
+  border-bottom: 2px solid goldenrod;
+  padding: 12px 34px; /* padding for spacing */
 }
 
-/* TODO: Add responsive design */
+/* Title/logo */
+.header-title {
+  color: goldenrod;
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem); /* responsive size */
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Navigation container */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* spacing between links */
+}
+
+/* Navigation links */
+.header-nav a {
+  text-decoration: none;
+  color: #d4af37; /* gold */
+  transition: color 0.3s ease;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.header-nav a:hover {
+  color: #b8941f; /* darker gold on hover */
+}
+
+/* Add separator automatically between links */
+.header-nav a:not(:last-child)::after {
+  content: "|";
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: #666; /* subtle gray for separator */
+  font-weight: normal;
+}
+
+/* Responsive: stack items on smaller screens */
 @media (max-width: 768px) {
-    /* Mobile styles */
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .header-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

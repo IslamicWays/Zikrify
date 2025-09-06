@@ -1,6 +1,11 @@
+clsx:  //for managing NameClass override
 npm install clsx
+Tailwind:
 npm install -D tailwindcss@3 postcss autoprefixer
 npx tailwindcss init -p
+Routing:
+npm install react-router-dom
+
 
 
 # React + TypeScript + Vite

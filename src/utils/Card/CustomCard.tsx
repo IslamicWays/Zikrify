@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import React from "react";
+import type { BackgroundColor } from "../constants";
 
 type Props = {
   header?: string;
@@ -7,6 +8,7 @@ type Props = {
   headerClassName?: string;
   bodyClassName?: string;
   children?: React.ReactNode;
+  backgroundColor?: BackgroundColor;
 } & React.HTMLAttributes<HTMLDivElement>;
 
 const CustomCard = ({
@@ -15,6 +17,7 @@ const CustomCard = ({
   className,
   headerClassName,
   bodyClassName,
+  backgroundColor = "bg-quran", // ✅ default,
   ...props
 }: Props) => {
   return (
@@ -23,8 +26,10 @@ const CustomCard = ({
         // Quran widget default styles
         "rounded-xl p-6 border border-[#d4af37] bg-gradient-to-br from-[#2f1a2f] to-[#4a2c4a]",
 
+        backgroundColor,
         // User overrides
-        className
+        className,
+        bodyClassName
       )}
       {...props}
     >
